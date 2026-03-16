@@ -1,0 +1,74 @@
+{
+  "task":[
+  {
+    "id": "1",
+    "title": "Complete React assignment",
+    "description": "Finish the To-Do API planning assignment",
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "id": "2",
+    "title": "Study Express.js",
+    "description": "Learn how to create REST APIs using Express",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "3",
+    "title": "Practice JavaScript",
+    "description": "Solve 5 coding problems",
+    "status": "completed",
+    "priority": "medium"
+  },
+  {
+    "id": "4",
+    "title": "Build To-Do backend",
+    "description": "Create CRUD APIs for tasks",
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "id": "5",
+    "title": "Update portfolio website",
+    "description": "Add latest React projects",
+    "status": "pending",
+    "priority": "low"
+  },
+  {
+    "id": "6",
+    "title": "Learn Tailwind CSS",
+    "description": "Practice layouts and responsive design",
+    "status": "completed",
+    "priority": "medium"
+  },
+  {
+    "id": "7",
+    "title": "Prepare resume",
+    "description": "Create a resume for internship applications",
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "id": "8",
+    "title": "Read about REST APIs",
+    "description": "Understand HTTP methods and endpoints",
+    "status": "completed",
+    "priority": "low"
+  },
+  {
+    "id": "9",
+    "title": "Push project to GitHub",
+    "description": "Upload To-Do project repository",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "10",
+    "title": "Prepare for hackathon",
+    "description": "Brainstorm project ideas and team roles",
+    "status": "pending",
+    "priority": "high"
+  }
+]
+}
