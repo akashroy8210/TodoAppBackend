@@ -1,52 +1,67 @@
-# Todo Backend
+# To-Do List App Backend
 
-This is a simple Todo backend built with Express.js. It provides basic REST APIs to create, read, update, delete, search, and filter tasks.
+This project is a simple To-Do List backend built with Node.js, Express, and MongoDB. It provides APIs to create, read, update, delete, and search tasks.
 
-## What you need to install
+## Prerequisites
 
--Install `Node.js`
--`npm` comes with Node.js
+- Node.js
+- npm
+- MongoDB connection string
 
-## Install project packages
+## Setup
 
-Run this inside the `TodoBackend` folder:
+1. Open the project folder:
+
+```bash
+cd TodoBackend
+```
+
+2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-This will install:
+3. Create or update your `.env` file with:
 
-- `express`
-- `cors`
-- `nodemon` for development
-
-## Main routes
-
-- `GET /` - Home route
-- `GET /task` - Get all tasks
-- `GET /task/:id` - Get task by id
-- `POST /task` - Create a task
-- `PUT /task/:id` - Update a task
-- `DELETE /task/:id` - Delete a task
-- `GET /task/status/:status` - Filter tasks by status
-- `GET /task/priority/:priority` - Filter tasks by priority
-- `GET /task/search/:search` - Search tasks by title
-
-## Run the project
-
-Start the server:
-
-```bash
-npm start
+```env
+MONGO_URL=your_mongodb_connection_string
 ```
 
-Run in development mode:
+## Run the App
+
+For development:
 
 ```bash
 npm run dev
 ```
 
-## Note
+For normal run:
 
-Task data is currently taken from `data/task.json`, so this project uses local JSON data instead of a database.
+```bash
+npm start
+```
+
+The server runs at:
+
+```bash
+http://localhost:8000
+```
+
+## Main API Routes
+
+- `GET /` - Home route
+- `GET /tasks` - Get all tasks
+- `GET /tasks/:id` - Get one task by id
+- `POST /tasks` - Add a new task
+- `PUT /tasks/:id` - Update a task by id
+- `DELETE /tasks/:id` - Delete a task by id
+- `GET /tasks/search/:search` - Search tasks by title
+- `GET /tasks/priority/:priority` - Search tasks by priority
+- `GET /tasks/status/:status` - Search tasks by status
+
+## Notes
+
+- The app uses Express for routing.
+- MongoDB is connected using Mongoose.
+- The server port is currently set to `8000` in `index.js`.
